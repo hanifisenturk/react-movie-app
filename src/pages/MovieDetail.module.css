@@ -1,0 +1,98 @@
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 2rem 4.8rem;
+  gap: 3.2rem;
+}
+
+.movie-image--container {
+  justify-self: center;
+}
+
+.title {
+  font-size: 4.8rem;
+}
+
+.overview {
+  font-size: 2rem;
+  color: rgb(92, 91, 91);
+  line-height: 1.3;
+  margin-top: 1.2rem;
+}
+
+.subdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+
+  margin-top: 3.2rem;
+}
+
+.subdetails-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subdetails-flex h4 {
+  font-size: 1.8rem;
+}
+
+.subdetails-items {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.subdetails-items p:not(:last-child)::after {
+  content: ",";
+}
+
+.websites {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+  align-self: center;
+}
+
+.websites a {
+  display: inline-block;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  background-color: #203239;
+  border-radius: 0.4rem;
+  text-align: center;
+  transition: background-color ease-in 0.2s;
+}
+
+.websites a:hover {
+  background-color: #34444b;
+}
+
+@media (max-width: 1080px) {
+  .movie-image--container:first-child {
+    justify-self: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 960px) {
+  .detail-container {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .overview {
+    text-align: center;
+  }
+}

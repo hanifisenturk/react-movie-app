@@ -1,0 +1,17 @@
+.movies-container {
+  margin-top: 2.4rem;
+  padding: 0 4.8rem 2rem 4.8rem;
+}
+
+.movies-container h3 {
+  color: #203239;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .movies-container h3 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
